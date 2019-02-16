@@ -1,0 +1,27 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troutman21/Personal-Website.git"
+  },
+  "author": "Phillip Troutman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/troutman21/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/troutman21/Personal-Website#readme",
+  "dependencies": {
+    "@babel/core": "^7.3.3",
+    "babel-loader": "^8.0.5",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  }
+}
