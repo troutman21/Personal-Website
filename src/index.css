@@ -1,0 +1,40 @@
+body{
+  background-color: #FCFCFC;
+  font-family: 'Space Mono', monospace;
+  display:flex;
+  justify-content: center;
+}
+
+section{
+  width: 33%;
+}
+
+header{
+  margin-bottom: 40px;
+}
+
+ul{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+
+}
+
+li{
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.selected{
+  color: green;
+}
+
+#name{
+  font-size: 1.25em;
+  font-weight: bold;
+}
