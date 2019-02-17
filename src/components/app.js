@@ -6,10 +6,11 @@ import Main from './main'
 class App extends Component{
   render(){
     return(
-      <>
-      <Header/>
-      <Main/>
-      </>
+      <div id="app">
+        <Header/>
+        <Main/>
+      </div>
+
     );
   }
 }
