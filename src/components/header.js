@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 class Header extends Component{
   render(){
     return(
-      <header>
+      <header id='header'>
       <nav>
         <ul>
           <li id='name'><NavLink exact={true}  activeClassName='selected' to='/'>Phillip_Troutman</NavLink></li>
