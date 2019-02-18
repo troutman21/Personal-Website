@@ -4,7 +4,8 @@ class Event extends Component{
   render(){
     return(
       <div className='Event'>
-        <div>{this.props.description}</div>
+        <div className='video-description'>{this.props.description}</div>
+        <div className='video-location'><i>{this.props.location}</i></div>
         <div className="iframe-container">
           <iframe
             width="560"
