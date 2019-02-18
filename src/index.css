@@ -1,3 +1,8 @@
+#app{
+  display:flex;
+  margin-top: 50px;
+}
+
 body{
   background-color: #FCFCFC;
   font-family: 'Space Mono', monospace;
@@ -6,18 +11,16 @@ body{
 }
 
 section{
-  width: 33%;
+  width: 66%;
 }
 
 header{
-  margin-bottom: 40px;
+  margin-right: 40px;
 }
 
 ul{
   padding: 0px;
   margin: 0px;
-  display: flex;
-
 }
 
 li{
@@ -29,9 +32,12 @@ a{
   text-decoration: none;
   color: black;
 }
+.bio a {
+  color: gold
+}
 
 .selected{
-  color: green;
+  color: gold;
 }
 
 #name{
@@ -41,4 +47,33 @@ a{
 
 #selfie{
   width: 100%;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+hr{
+  margin-top: 20px;
+}
+
+.bio div{
+  margin-top: 20px;
+}
+
+.video-description{
+  margin-top: 20px;
+  font-weight: bold;
 }
