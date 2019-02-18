@@ -26,11 +26,11 @@ class SpeakingEvents extends Component{
     }
 
     return (
-      <>
-        <div>A few of my more recent talks...</div>
+      <div id='speakingEvents'>
+        <div></div>
         <hr/>
         {events}
-      </>
+      </div>
     );
   }
 }
