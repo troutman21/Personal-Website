@@ -9,8 +9,9 @@ class SpeakingEvents extends Component{
         'https://www.youtube.com/embed/70UNvQDPrTA',
       ],
       eventDescriptions: [
-        'Ex esse nostrud consectetur sunt ullamco occaecat. Id do occaecat duis deserunt tempor qui adipisicing aliquip enim est. Adipisicing amet ipsum sint labore nisi nisi ad esse non ut laborum nisi enim laboris. Nostrud laborum irure minim eiusmod aliqua et cupidatat est id ut.',
+        'Will the new React Context API be the Redux killer? ',
       ],
+      eventLocation: ['JavascriptLA | Los Angeles, CA']
     }
   }
   render(){
@@ -20,6 +21,7 @@ class SpeakingEvents extends Component{
         <Event
           url={this.state.eventUrls[i]}
           description={this.state.eventDescriptions[i]}
+          location={this.state.eventLocation[i]}
           key={`events-${i}`}
         />
       );
@@ -27,7 +29,6 @@ class SpeakingEvents extends Component{
 
     return (
       <div id='speakingEvents'>
-        <div></div>
         <hr/>
         {events}
       </div>
