@@ -1,0 +1,8 @@
+deploy:
+  provider: s3
+  access_key_id: "AKIAJ25ZDZ3JK2CL6IEQ"
+  secret_access_key: "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"
+  bucket: "philliptroutman.info"
+  skip_cleanup: true
+  acl: public_read
+  local_dir: dist
