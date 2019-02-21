@@ -1,11 +1,15 @@
 language: node_js
 node_js:
-    - node
+    - "8"
+script:
+  -npm run test
+before_deploy:
+  npm run build:prod
 deploy:
   provider: s3
-  access_key_id: "AKIAJ25ZDZ3JK2CL6IEQ"
-  secret_access_key: "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"
-  bucket: "philliptroutman.info"
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: $S3_BUCKET
   skip_cleanup: true
   acl: public_read
   local_dir: dist
