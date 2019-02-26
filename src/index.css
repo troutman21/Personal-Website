@@ -1,52 +1,56 @@
-#app{
-  display:flex;
-  margin-top: 50px;
-}
-
+/* mobile friendly first  */
 body{
-  background-color: #FCFCFC;
+  background-color: pink;
   font-family: 'Space Mono', monospace;
   display:flex;
   justify-content: center;
 }
 
 section{
-  width: 66%;
-}
-
-header{
-  margin-right: 40px;
+  width: 80%;
 }
 
 ul{
+  display: flex;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
 }
 
 li{
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+  padding: 5px 0;
   list-style-type: none;
-  margin-right: 20px;
+  width: 100%;
+}
+
+li:hover{
+  background-color:green;
 }
 
 a{
   text-decoration: none;
   color: black;
 }
+
 .bio a {
-  color: gold
+  color: blue
 }
 
 .selected{
-  color: gold;
+  color: blue;
+  font-weight: bolder;
+}
+
+#selfie{
+  width: 100%;
 }
 
 #name{
   font-size: 1.25em;
   font-weight: bold;
-}
-
-#selfie{
-  width: 100%;
 }
 
 .iframe-container{
@@ -71,9 +75,43 @@ hr{
 
 .bio div{
   margin-top: 20px;
+  line-height: 1.6;
 }
 
 .video-description{
   margin-top: 20px;
   font-weight: bold;
+}
+
+
+@media screen and (min-width: 568px) and (max-width: 899px) {
+  body{
+    background-color: orange;
+  }
+
+  #sub-nav{
+    display: flex;
+    margin: 10px;
+  }
+}
+
+
+
+@media screen and (min-width: 900px){
+  /* the rule sets for bigger screens */
+  body{
+    background-color: red;
+  }
+  li{
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  #app{
+    display: flex;
+  }
+
+  header{
+    margin-right: 40px;
+  }
+
 }
