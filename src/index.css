@@ -44,11 +44,6 @@ li{
   width: 100%;
 }
 
-li:hover{
-  background-color:white;
-  color:#222
-}
-
 a{
   text-decoration: none;
   color: white;
@@ -122,11 +117,6 @@ hr{
     justify-content: space-around;
   }
 
-  li:hover{
-    background-color:unset;
-    color: unset;
-  }
-
 }
 
 
@@ -154,11 +144,6 @@ hr{
   li{
     list-style-type: none;
     margin-right: 20px;
-  }
-
-  li:hover{
-    background-color:unset;
-    color: unset;
   }
 
   a{
