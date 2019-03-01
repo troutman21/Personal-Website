@@ -1,46 +1,65 @@
 /* mobile friendly first  */
+:root {
+  --primary-color: steelBlue;
+}
+
 body{
-  background-color: pink;
+  padding: 0;
+  margin: 0;
   font-family: 'Space Mono', monospace;
   display:flex;
   justify-content: center;
 }
 
-section{
+#app{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#header{
+  background-color:#222;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#main{
   width: 80%;
 }
 
 ul{
+  margin:0;
+  padding:0;
   display: flex;
   flex-direction: column;
-  padding: 0px;
-  margin: 0px;
 }
 
 li{
   display: flex;
   justify-content: center;
-  background-color: lightblue;
+  align-items:center;
   padding: 5px 0;
   list-style-type: none;
   width: 100%;
 }
 
 li:hover{
-  background-color:green;
+  background-color:white;
+  color:#222
 }
 
 a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .bio a {
-  color: blue
+  color: var(--primary-color);
 }
 
 .selected{
-  color: blue;
+  color: var(--primary-color)!important;
   font-weight: bolder;
 }
 
@@ -85,33 +104,65 @@ hr{
 
 
 @media screen and (min-width: 568px) and (max-width: 899px) {
-  body{
-    background-color: orange;
+  #root{
+    width: 80%;
+  }
+
+  #header{
+    background-color: white;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
   }
 
   #sub-nav{
     display: flex;
-    margin: 10px;
+    justify-content: space-around;
   }
+
+  li:hover{
+    background-color:unset;
+    color: unset;
+  }
+
 }
 
 
 
 @media screen and (min-width: 900px){
   /* the rule sets for bigger screens */
-  body{
-    background-color: red;
+  #root{
+    width: 80%;
+    max-width: 800px;
   }
+
+  #app{
+    display: flex;
+    flex-direction: row;
+    align-items: unset;
+    margin-top: 40px;
+  }
+
+  #header{
+    width:unset;
+    background-color: unset;
+    margin-right: 40px;
+  }
+
   li{
     list-style-type: none;
     margin-right: 20px;
   }
-  #app{
-    display: flex;
+
+  li:hover{
+    background-color:unset;
+    color: unset;
   }
 
-  header{
-    margin-right: 40px;
+  a{
+    color: black;
   }
 
 }

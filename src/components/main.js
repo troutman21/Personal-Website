@@ -6,7 +6,7 @@ import SpeakingEvents from './speakingEvents';
 class Main extends Component{
   render(){
     return(
-      <main>
+      <main id='main'>
         <Switch>
           <Route exact path='/' component={ Home }/>
           <Route exact path='/speaking' component={ SpeakingEvents }/>

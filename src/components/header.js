@@ -7,12 +7,12 @@ class Header extends Component{
       <header id='header'>
       <nav>
         <ul>
-          <li id='name'><NavLink exact={true}  activeClassName='selected' to='/'>Phillip_Troutman</NavLink></li>
+          <NavLink exact={true}  activeClassName='selected' to='/'><li id='name'>Phillip_Troutman</li></NavLink>
           <div id='sub-nav'>
-          <li><NavLink activeClassName='selected' to='/speaking'>_speaking</NavLink></li>
-          <li><a href='mailto:philliptroutman21@gmail.com'>_email</a></li>
-          <li><a href='https://github.com/troutman21'>_programming</a></li>
-          <li><a href='https://twitter.com/_Troutman_'>_twitter</a></li>
+          <NavLink activeClassName='selected' to='/speaking'><li>_speaking</li></NavLink>
+          <a href='mailto:philliptroutman21@gmail.com'><li>_email</li></a>
+          <a href='https://github.com/troutman21'><li>_programming</li></a>
+          <a href='https://twitter.com/_Troutman_'><li>_twitter</li></a>
           </div>
         </ul>
       </nav>
