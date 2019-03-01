@@ -1,52 +1,75 @@
-#app{
-  display:flex;
-  margin-top: 50px;
+/* mobile friendly first  */
+:root {
+  --primary-color: steelBlue;
 }
 
 body{
-  background-color: #FCFCFC;
+  padding: 0;
+  margin: 0;
   font-family: 'Space Mono', monospace;
   display:flex;
   justify-content: center;
 }
 
-section{
-  width: 66%;
+#app{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
-header{
-  margin-right: 40px;
+#header{
+  background-color:#222;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#main{
+  width: 80%;
 }
 
 ul{
-  padding: 0px;
-  margin: 0px;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
 }
 
 li{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 5px 0;
   list-style-type: none;
-  margin-right: 20px;
+  width: 100%;
+}
+
+li:hover{
+  background-color:white;
+  color:#222
 }
 
 a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
+
 .bio a {
-  color: gold
+  color: var(--primary-color);
 }
 
 .selected{
-  color: gold;
+  color: var(--primary-color)!important;
+  font-weight: bolder;
+}
+
+#selfie{
+  width: 100%;
 }
 
 #name{
   font-size: 1.25em;
   font-weight: bold;
-}
-
-#selfie{
-  width: 100%;
 }
 
 .iframe-container{
@@ -71,9 +94,75 @@ hr{
 
 .bio div{
   margin-top: 20px;
+  line-height: 1.6;
 }
 
 .video-description{
   margin-top: 20px;
   font-weight: bold;
+}
+
+
+@media screen and (min-width: 568px) and (max-width: 899px) {
+  #root{
+    width: 80%;
+  }
+
+  #header{
+    background-color: white;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  #sub-nav{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li:hover{
+    background-color:unset;
+    color: unset;
+  }
+
+}
+
+
+
+@media screen and (min-width: 900px){
+  /* the rule sets for bigger screens */
+  #root{
+    width: 80%;
+    max-width: 800px;
+  }
+
+  #app{
+    display: flex;
+    flex-direction: row;
+    align-items: unset;
+    margin-top: 40px;
+  }
+
+  #header{
+    width:unset;
+    background-color: unset;
+    margin-right: 40px;
+  }
+
+  li{
+    list-style-type: none;
+    margin-right: 20px;
+  }
+
+  li:hover{
+    background-color:unset;
+    color: unset;
+  }
+
+  a{
+    color: black;
+  }
+
 }
