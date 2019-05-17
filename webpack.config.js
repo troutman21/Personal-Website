@@ -3,23 +3,23 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
-  output:{
+  output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
-  module:{
+  module: {
     rules: [
       {
-        test:/\.js$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
-            loader: 'babel-loader'
+          loader: 'babel-loader',
         },
       },
       {
-        test:/\.css$/,
+        test: /\.css$/,
         exclude: /node_modules/,
-        use:['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -35,4 +35,4 @@ module.exports = {
     contentBase: 'dist',
     port: 9000,
   },
-}
+};
