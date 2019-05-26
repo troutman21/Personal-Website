@@ -1,4 +1,7 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -7,6 +10,18 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: './src/assets',
+        to: 'images',
+      },
+    ]),
+    new webpack.HotModuleReplacementPlugin(),
+  ],
   module: {
     rules: [
       {
@@ -21,18 +36,19 @@ module.exports = {
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader'],
       },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
+      // {
+      //   test: /\.(png|jpg|gif)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //     },
+      //   ],
+      // },
     ],
   },
   devServer: {
-    contentBase: 'dist',
+    contentBase: path.join(__dirname, 'dist'),
     port: 9000,
+    hot: true,
   },
 };
