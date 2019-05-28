@@ -11,3 +11,9 @@ reactDOM.render(
   </BrowserRouter>,
   document.querySelector('#root')
 );
+
+// used for HMR in development
+// first checks if the interface is available to us (it wont be available in production build)
+if (module.hot) {
+  module.hot.accept();
+}
