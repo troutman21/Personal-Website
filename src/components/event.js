@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class Event extends Component {
   render() {
-    console.log(this.props);
     // if there is a video provided render an iframe that plays the video
     if (this.props.hasVideo) {
       return (
