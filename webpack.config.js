@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -10,6 +10,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    port: 9000,
+    hot: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -38,9 +43,5 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    port: 9000,
   },
 };
