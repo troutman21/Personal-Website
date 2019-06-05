@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  background-color: green;
+  background-color: peru;
+  border: 1px solid red;
 `;
 
 class ExampleButton extends Component {
