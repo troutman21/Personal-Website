@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from '../home/home';
-import SpeakingEvents from '../speakingEvents/speakingEvents';
+import Home from '../home';
+import SpeakingEvents from '../speakingEvents';
 
 class Main extends Component {
   render() {
