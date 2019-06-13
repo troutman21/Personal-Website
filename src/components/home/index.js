@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Selfie from '../selfie';
-import Bio from '../bio';
+import React, { Component } from './node_modules/react';
+import Selfie from '../Selfie';
+import Bio from '../Bio';
 
 class Home extends Component {
   render() {

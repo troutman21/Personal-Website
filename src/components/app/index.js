@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Header from '../header';
-import Main from '../main';
+import React, { Component } from './node_modules/react';
+import Header from '../Header';
+import Main from '../Main';
 import { AppStyleWrapper } from './style';
 
 class App extends Component {
