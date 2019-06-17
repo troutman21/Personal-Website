@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import Navigation from '../Navigation';
+import NavBar from '../NavBar';
 
 class Header extends Component {
   render() {
     return (
       <header id="header">
-        <Navigation />
+        <NavBar />
       </header>
     );
   }
