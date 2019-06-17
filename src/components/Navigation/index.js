@@ -6,23 +6,21 @@ class NavBar extends Component {
     return (
       <nav>
         <ul>
-          <NavLink exact={true} activeClassName="selected" to="/">
-            <li id="name">Phillip_Troutman</li>
-          </NavLink>
-          <div id="sub-nav">
-            <NavLink activeClassName="selected" to="/speaking">
-              <li>_speaking</li>
-            </NavLink>
-            <a href="mailto:philliptroutman21@gmail.com">
-              <li>_email</li>
-            </a>
-            <a href="https://github.com/troutman21">
-              <li>_programming</li>
-            </a>
-            <a href="https://twitter.com/_Troutman_">
-              <li>_twitter</li>
-            </a>
-          </div>
+          <NavButton navLink to="/">
+            Phillip_Troutman
+          </NavButton>
+          <NavButton navLink to="/speaking">
+            _speaking
+          </NavButton>
+          <NavButton linkHref="mailto:philliptroutman21@gmail.com">
+            _email
+          </NavButton>
+          <NavButton linkHref="https://github.com/troutman21">
+            _programming
+          </NavButton>
+          <NavButton linkHref="https://twitter.com/_Troutman_">
+            _twitter
+          </NavButton>
         </ul>
       </nav>
     );

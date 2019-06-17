@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-
-//  Need to pull over the nav link buttons from Navigation file
+import { NavLink } from 'react-router-dom';
 
 class NavButton extends Component {
   render() {
+    const { navLink, to, children, linkHref } = this.props;
+    if (navLink) {
+      return (
+        <NavLink exact={true} activeClassName="selected" to={to}>
+          <li>{children}</li>
+        </NavLink>
+      );
+    }
     return (
-      <a href="x">
-        <button>hello</button>
+      <a href={linkHref}>
+        <li>{children}</li>
       </a>
     );
   }

@@ -1,5 +1,5 @@
-import React, { Component } from './node_modules/react';
-import styled from './node_modules/styled-components';
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 const Image = styled.img`
   width: 100%;

@@ -1,5 +1,5 @@
-import React, { Component } from './node_modules/react';
-import { Route, Switch } from './node_modules/react-router-dom';
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Home from '../Home';
 import SpeakingEvents from '../SpeakingEvents';
 

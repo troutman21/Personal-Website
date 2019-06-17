@@ -1,4 +1,4 @@
-import React, { Component } from './node_modules/react';
+import React, { Component } from 'react';
 import Header from '../Header';
 import Main from '../Main';
 import { AppStyleWrapper } from './style';
