@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Event from './event';
+import Event from '../Event';
 
 // Add additional events and event info here
 const initialEventsInfo = [
