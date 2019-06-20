@@ -8,9 +8,3 @@ Run `npm run build:dev` this will start up the webpack-dev-server and open the h
     * {hasVideo: Boolean, videoUrl: String || null, eventImage: String || null, eventDescription: String, eventLocation: String}
         * If the event has a video you can add the embed YouTube url there.
         * If it is just an image (no video) add an image to the ./src/assets/ folder and add the name of the image as the "eventImage" property.
-
-## Todos:
-- Add HMR
-- Add testing
-- Add type checking
-
