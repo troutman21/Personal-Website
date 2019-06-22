@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import NavButton from '../NavButton';
+import { Nav, Ul } from './style';
 
 class NavBar extends Component {
   render() {
     return (
-      <nav>
-        <ul>
+      <Nav>
+        <Ul>
           <NavButton navLink to="/">
             Phillip_Troutman
           </NavButton>
@@ -21,8 +22,8 @@ class NavBar extends Component {
           <NavButton linkHref="https://twitter.com/_Troutman_">
             _twitter
           </NavButton>
-        </ul>
-      </nav>
+        </Ul>
+      </Nav>
     );
   }
 }

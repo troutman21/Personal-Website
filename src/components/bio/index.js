@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { A, BioWrapper } from './style';
 
 class Bio extends Component {
   render() {
     return (
-      <div className="bio">
+      <BioWrapper>
         <div>
           My name is Phillip Troutman. I'm a Senior Full Stack Engineer and Lead
-          Instructor at <a href="https://www.codesmith.io">Codesmith</a> NY.
+          Instructor at <A href="https://www.codesmith.io">Codesmith</A> NY.
           Codesmith is a 12 week software engineering residency focused on
           building autonomous problem solving engineers.
         </div>
@@ -26,7 +27,7 @@ class Bio extends Component {
           (BAWA) workshop on fundamental programming topics (Intro to React, Web
           Browser APIs, DOM Manipulation, and Node)
         </div>
-      </div>
+      </BioWrapper>
     );
   }
 }
