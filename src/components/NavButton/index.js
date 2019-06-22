@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { A, StyledNavLink } from './style';
 
 class NavButton extends Component {
   render() {
     const { navLink, to, children, linkHref } = this.props;
     if (navLink) {
       return (
-        <NavLink exact={true} activeClassName="selected" to={to}>
+        <StyledNavLink exact={true} to={to}>
           <li>{children}</li>
-        </NavLink>
+        </StyledNavLink>
       );
     }
     return (
-      <a href={linkHref}>
+      <A href={linkHref}>
         <li>{children}</li>
-      </a>
+      </A>
     );
   }
 }
