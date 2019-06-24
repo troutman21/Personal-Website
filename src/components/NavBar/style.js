@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  /* color: #bdbec1; */
+  width: 100%;
 `;
 
 export const Ul = styled.ul`
