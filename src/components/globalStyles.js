@@ -12,7 +12,8 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     --primary-color: #ffbe01;
-    background-color: #2a2b2e;
+    --secondary-color: #2a2b2e;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     font-family: 'Space Mono', monospace;
