@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Event from '../Event';
-
+import { SpeakingEventsStyleWrapper } from './style';
 // Add additional events and event info here
 const initialEventsInfo = [
   {
@@ -35,7 +35,7 @@ function SpeakingEvents(props) {
       />
     );
   }
-  return events;
+  return <SpeakingEventsStyleWrapper>{events}</SpeakingEventsStyleWrapper>;
 }
 
 export default SpeakingEvents;

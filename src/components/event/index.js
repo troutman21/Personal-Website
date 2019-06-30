@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { EventWrapper, Img, Iframe, MediaContainer } from './style';
+import { EventWrapper, Img, Iframe, IframeContainer } from './style';
 
 class Event extends Component {
   render() {
@@ -7,11 +7,11 @@ class Event extends Component {
     if (this.props.hasVideo) {
       return (
         <EventWrapper>
-          {/* <div className="video-description">{this.props.description}</div>
+          <div className="video-description">{this.props.description}</div>
           <div className="video-location">
             <i>{this.props.location}</i>
-          </div> */}
-          <MediaContainer>
+          </div>
+          <IframeContainer>
             <Iframe
               className="media"
               title="Phillip gives talk on context"
@@ -22,24 +22,21 @@ class Event extends Component {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
-          </MediaContainer>
+          </IframeContainer>
         </EventWrapper>
       );
     }
 
     return (
       <EventWrapper>
-        {/*<div className="video-description">{this.props.description}</div>
+        <div className="video-description">{this.props.description}</div>
         <div className="video-location">
           <i>{this.props.location}</i>
-    </div>*/}
-        <MediaContainer>
-          <Img
-            className="media"
-            src={`./images/${this.props.url}`}
-            alt="Phillip at speaking event"
-          />
-        </MediaContainer>
+        </div>
+        <Img
+          src={`./images/${this.props.url}`}
+          alt="Phillip at speaking event"
+        />
       </EventWrapper>
     );
   }
