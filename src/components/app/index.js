@@ -6,12 +6,10 @@ import { AppStyleWrapper } from './style';
 class App extends Component {
   render() {
     return (
-      <>
-        <AppStyleWrapper>
-          <Header />
-          <Main />
-        </AppStyleWrapper>
-      </>
+      <AppStyleWrapper>
+        <Header />
+        <Main />
+      </AppStyleWrapper>
     );
   }
 }

@@ -31,7 +31,7 @@ function SpeakingEvents(props) {
         url={eventsInfo[i].eventImage || eventsInfo[i].videoUrl}
         description={eventsInfo[i].eventDescription}
         location={eventsInfo[i].eventLocation}
-        key={`events-${i}`}
+        key={`event-${i}`}
       />
     );
   }
