@@ -15,8 +15,6 @@ class Event extends Component {
             <Iframe
               className="media"
               title="Phillip gives talk on context"
-              width="100%"
-              height="100%"
               src={this.props.url}
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
