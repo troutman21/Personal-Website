@@ -4,6 +4,6 @@ export const A = styled.a`
   color: var(--primary-color);
 `;
 
-export const BioWrapper = styled.section`
+export const BioStyleWrapper = styled.section`
   color: #ffffff;
 `;

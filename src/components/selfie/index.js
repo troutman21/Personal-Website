@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import { Image } from './style';
 
-const Image = styled.img`
-  width: 100%;
-`;
 class Selfie extends Component {
   render() {
     return (
-      <>
-        <Image src="./images/teaching1.jpg" alt="Phillip Troutman Teaching" />
-        <hr />
-      </>
+      <Image src="./images/teaching1.jpg" alt="Phillip Troutman Teaching" />
     );
   }
 }

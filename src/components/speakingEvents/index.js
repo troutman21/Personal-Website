@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Event from '../Event';
-
+import { SpeakingEventsStyleWrapper } from './style';
 // Add additional events and event info here
 const initialEventsInfo = [
   {
@@ -31,11 +31,11 @@ function SpeakingEvents(props) {
         url={eventsInfo[i].eventImage || eventsInfo[i].videoUrl}
         description={eventsInfo[i].eventDescription}
         location={eventsInfo[i].eventLocation}
-        key={`events-${i}`}
+        key={`event-${i}`}
       />
     );
   }
-  return events;
+  return <SpeakingEventsStyleWrapper>{events}</SpeakingEventsStyleWrapper>;
 }
 
 export default SpeakingEvents;
