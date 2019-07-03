@@ -5,7 +5,4 @@ export const SpeakingEventsStyleWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   width: 80%;
-  /* Remove below */
-  background: pink;
-  padding: 10px;
 `;

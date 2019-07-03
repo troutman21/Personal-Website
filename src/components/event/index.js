@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { EventWrapper, Img, Iframe, IframeContainer } from './style';
+import { EventWrapper, Img, Iframe, IframeContainer, StyledHr } from './style';
 
 class Event extends Component {
   render() {
@@ -21,6 +21,7 @@ class Event extends Component {
               allowFullScreen
             />
           </IframeContainer>
+          <StyledHr />
         </EventWrapper>
       );
     }

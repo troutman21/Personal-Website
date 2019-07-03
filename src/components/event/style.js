@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 export const EventWrapper = styled.div`
   width: 100%;
-  /* Remove below */
-  background: red;
-  padding: 10px;
+  margin-bottom: 80px;
 `;
 
 export const Img = styled.img`
@@ -25,4 +23,10 @@ export const Iframe = styled.iframe`
   position: absolute;
   left: 0;
   top: 0;
+`;
+
+export const StyledHr = styled.hr`
+  width: 100%;
+  margin-top: 100px;
+  color: white;
 `;
