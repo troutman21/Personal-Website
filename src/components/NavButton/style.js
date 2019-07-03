@@ -18,7 +18,7 @@ export const StyledNavLink = styled(NavLink).attrs({
   activeClassName: 'selected',
 })`
   color: #bdbec1;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 120%;
   text-decoration: none;
   border-top: 1px solid var(--secondary-color);

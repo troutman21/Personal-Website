@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const EventWrapper = styled.div`
+export const EventStyleWrapper = styled.div`
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 `;
 
 export const Img = styled.img`
@@ -10,7 +10,7 @@ export const Img = styled.img`
   height: auto;
 `;
 
-export const IframeContainer = styled.div`
+export const IframeStyleWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 0;
@@ -25,8 +25,10 @@ export const Iframe = styled.iframe`
   top: 0;
 `;
 
-export const StyledHr = styled.hr`
-  width: 100%;
-  margin-top: 100px;
-  color: white;
+export const InfoStyleWrapper = styled.section`
+  margin-bottom: 30px;
+`;
+
+export const Hr = styled.hr`
+  margin-top: 40px;
 `;
