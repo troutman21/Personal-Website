@@ -5,7 +5,4 @@ export const HomeStyleWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   width: 80%;
-  /* remove below */
-  padding: 10px;
-  background: purple;
 `;

@@ -4,7 +4,6 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    border: 0;
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
@@ -17,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
     font-family: 'Space Mono', monospace;
+    color: #ffffff;
   }
 `;
 

@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
-export const EventWrapper = styled.div`
+export const EventStyleWrapper = styled.div`
   width: 100%;
-  /* Remove below */
-  background: red;
-  padding: 10px;
+  margin-bottom: 40px;
 `;
 
 export const Img = styled.img`
@@ -12,7 +10,7 @@ export const Img = styled.img`
   height: auto;
 `;
 
-export const IframeContainer = styled.div`
+export const IframeStyleWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 0;
@@ -25,4 +23,12 @@ export const Iframe = styled.iframe`
   position: absolute;
   left: 0;
   top: 0;
+`;
+
+export const InfoStyleWrapper = styled.section`
+  margin-bottom: 30px;
+`;
+
+export const Hr = styled.hr`
+  margin-top: 40px;
 `;
