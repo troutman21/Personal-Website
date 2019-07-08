@@ -5,4 +5,5 @@ export const HomeStyleWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   width: 80%;
+  line-height: 200%;
 `;
