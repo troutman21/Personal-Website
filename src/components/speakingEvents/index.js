@@ -17,6 +17,20 @@ const initialEventsInfo = [
     eventDescription: 'React Corporate Training',
     eventLocation: 'New York Times | New York, NY',
   },
+  {
+    hasVideo: false,
+    videoUrl: null,
+    eventImage: 'reactHooks.jpg',
+    eventDescription: 'Getting Hooked on Hooks',
+    eventLocation: 'Queens.js | New York, NY',
+  },
+  {
+    hasVideo: false,
+    videoUrl: null,
+    eventImage: 'OOP.JPG',
+    eventDescription: 'JavaScript the Hard Parts - Object Oriented Programming',
+    eventLocation: 'Nomadworks | New York, NY',
+  },
 ];
 
 function SpeakingEvents(props) {

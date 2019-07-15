@@ -8,7 +8,7 @@ class Bio extends Component {
         <article>
           <p>
             My name is Phillip Troutman. I'm a Senior Full Stack Engineer and
-            Lead Instructor at <A href="https://www.codesmith.io">Codesmith</A>
+            Lead Instructor at <A href="https://www.codesmith.io">Codesmith</A>{' '}
             NY. Codesmith is a 12 week software engineering residency focused on
             building autonomous problem solving engineers.
           </p>
