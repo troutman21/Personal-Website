@@ -47,6 +47,7 @@ class Event extends Component {
           src={`./images/${this.props.url}`}
           alt="Phillip at speaking event"
         />
+        <Hr />
       </EventStyleWrapper>
     );
   }
