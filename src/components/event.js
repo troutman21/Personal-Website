@@ -37,11 +37,13 @@ class Event extends Component {
             <i>{this.props.location}</i>
           </div>
           <div className="media-container">
-            <img
-              className="media"
-              src={`./images/${this.props.url}`}
-              alt="Phillip at speaking event"
-            />
+            <a href={this.props.link}>
+              <img
+                className="media"
+                src={`./images/${this.props.url}`}
+                alt="Phillip at speaking event"
+              />
+            </a>
           </div>
         </div>
         <hr />

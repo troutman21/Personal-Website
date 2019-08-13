@@ -17,6 +17,13 @@ const initialEventsInfo = [
     eventDescription: 'React Corporate Training',
     eventLocation: 'New York Times | New York, NY',
   },
+  {
+    hasVideo: false,
+    eventImage: 'closures.jpeg',
+    link: 'https://closures.codesmith.io/',
+    eventDescription: 'Learn JavaScript Closures',
+    eventLocation: 'Codesmith | New York, NY',
+  },
 ];
 
 function SpeakingEvents(props) {
@@ -29,6 +36,7 @@ function SpeakingEvents(props) {
       <Event
         hasVideo={eventsInfo[i].hasVideo}
         url={eventsInfo[i].eventImage || eventsInfo[i].videoUrl}
+        link={eventsInfo[i].link}
         description={eventsInfo[i].eventDescription}
         location={eventsInfo[i].eventLocation}
         key={`events-${i}`}
